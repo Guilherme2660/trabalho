@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height:100px;
+    background-color: rgb(54, 69, 54);
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    flex: 50px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.logo h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: chartreuse;
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu{
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 5px;  
+}
+
+.menu a:hover{
+    color: rgb(0, 44, 0);
+    border-top: 4px solid black;
+}
+
+.header{
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    background-color: #b2773c;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecario{
+    margin: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.cabecario p{
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+}
+
+.img-cabecario{
+    margin: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+/* parte do texto do meio */
+.texto_meio{
+    text-align: center;
+    margin: 20px;
+    flex: 1;
+}
+
+.header_meio{
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    background-color: #68a76e;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_meio p{
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+}
+
+.texto_final{
+    text-align: center;
+    margin: 20px;
+    flex: 1;
+}
+
+.header_final{
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    background-color: #d4f087;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_final{
+    margin: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+      margin-left: 20px;
+    }
+    
+    .menu {
+      flex: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    .cabecario, .img-cabecario {
+      flex: 100%;
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .cabecario h1 {
+      font-size: 30px;
+    }
+    
+    .cabecario p {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+ 
+    .img-cabecario img {
+      max-width: 10%;
+      height:min-content;
+   }
+  
+}

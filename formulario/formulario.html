@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de envio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Preencher Formulario</h1>
+        <form action="receber.php?id=6" method="post">
+            <fieldset>
+
+                <legend>Dados pessoais e contato</legend>
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text" name="nome">
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" name="email">
+                </div>
+                <div>
+                    <label for="date">Nascimentos: </label>
+                    <input id="date" type="date" name="date">
+                </div>
+
+                <div>
+                    <label for="senha"> Senha: </label>
+                    <input id="Telefone" type="password" name="senha">
+                </div>  
+
+                <div>
+                    <label for="telefone">telefone: </label>
+                    <input id="tel" type="telefone" name="Telefone" 
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" 
+                    required placeholder="(xx) xxxxx-xxxx" >
+                  </div>
+            </fieldset>
+            
+           <h2>Conhecimentos e experiências</h2>
+                <fieldset>
+
+                    <legend>Conhecimentos</legend>
+
+                <div>
+                    <label for="C++">C++</label>
+                    <input type="checkbox" id="C++" name="C++" value="C++">
+                </div>
+
+                <div>
+                    <label for="JavaScript">JavaScript</label>
+                    <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+
+                </div>
+
+                <div>
+
+                    <label for="MYSQL">MYSQL</label>
+                    <input type="checkbox" id="MYSQL" name="MYSQL" value="MYSQL">
+                </div>
+
+                <div>
+                    <label for="PHP "> PHP </label>
+                    <input type="checkbox" id="PHP" name="PHP" value="PHP" >
+                </div>
+
+                <div>
+                    <label for="C#">C#</label>
+                    <input type="checkbox" id="C#" name="C#" value="C#">
+                </div>
+
+                    <legend>Experiências</legend>
+
+                <div>
+                    <label for="Experiências"></label>
+                    <textarea id="Experiências" name="Experiências" rows="4" cols="50"></textarea>
+                </div>
+                </fieldset>
+
+                <h3>Áreas de Interesse</h3>
+                <fieldset>
+                
+                    <legend> Áreas de Interesse</legend>
+
+                <div>
+                    <label for="areas">Áreas de Interesse</label>
+                    <select name="Áreas de Interesse" id="areas"> 
+                        <option value="Tester">Tester</option>
+                        <option value="Front-end">Front-end</option>
+                        <option value="Back-end">Back-end</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="Prentensao salarial">Prentensão salaria:</label>
+                    <input type="text" id="Prentensao salarial" name="Prentensão salaria" >
+                </div>
+                </fieldset>
+
+                <h4>Termos de Uso</h4>
+                
+                <fieldset>
+
+                    <div>
+                        <label for="termos-uso"></label>
+                        <textarea id="termos-uso" name="termos-uso" rows="10" readonly  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod mauris vel ante tincidunt,
+                             ac consectetur quam dictum. Nullam finibus, justo eu malesuada posuere, nulla velit commodo augue, vitae sodales massa nibh et tellus. 
+                             Suspendisse potenti. Quisque et bibendum sapien, sit amet pellentesque libero. Ut eu ante vitae lectus blandit auctor. Fusce ac mauris commodo, 
+                             lobortis enim vitae, mattis mauris. Sed lobortis ipsum id nibh blandit ultrices. Praesent eget malesuada sapien. Vivamus tincidunt auctor risus, 
+                             eu accumsan ante elementum vel. Ut sit amet venenatis odio. In bibendum elit elit, vitae commodo massa rhoncus sed. Nulla facilisi. Aliquam erat 
+                             volutpat. </textarea>
+                        
+                        <label for="aceito-termos">Eu aceito os termos de uso:</label>
+                        <input type="checkbox" id="aceito-termos" name="aceito-termos" required>
+                    </div>
+
+                </fieldset>
+                   
+                          
+                    <button type='submit'>Enviar</button>
+
+
+
+
+    </div>
+
+
+            
+            
+            
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
